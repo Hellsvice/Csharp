@@ -1,0 +1,33 @@
+﻿<Window x:Class="Hazi5WPF_CRUD.AddOrUpdateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hazi5WPF_CRUD"
+        mc:Ignorable="d"
+        Title="AddOrUpdateWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0"  Margin="5">
+            <Label Content="Név" Width="100" Height="40"/>
+            <TextBox Text="{Binding Person.Name}" Width="500" Height="40"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1"  Margin="5">
+            <Label Content="Életkor" Width="100" Height="40"/>
+            <TextBox Text="{Binding Person.Age}" Width="500" Height="40"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" Margin="5">
+            <Button Content="OK"  Width="100" Height="20" Margin="10" Click="OK_Click"/>
+            <Button Content="Cancel"  Width="100" Height="20"  Margin="10" Click="CancelClick"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
