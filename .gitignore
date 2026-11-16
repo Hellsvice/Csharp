@@ -1,1 +1,29 @@
+# Visual Studio / .NET temporary data
+**/.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.pdb
+
+# Python and local IDE environments
 /PythonProject/
+**/.venv/
+**/__pycache__/
+**/.idea/
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+**/appsettings.Development.json
+**/secrets.json
+*.pfx
+*.pem
+*.key
+
+# OS-generated files
+.DS_Store
+Thumbs.db
